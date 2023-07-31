@@ -48,13 +48,33 @@ html, body {
     
 }
 
-.heading {
-    color: white;
-    font-family: 'Encode Sans', sans-serif;
-}
-
 .logo {
-    height: 32px;
+    height: 55px;
     margin-right: 15px;
     margin-left: 15px;
 }
+
+.type-container h1 {
+    font-size: 300%;
+    color: white;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .1em solid rgb(255, 255, 255); 
+    white-space: nowrap; 
+    margin: 0 0 15px 0;
+    letter-spacing: 0.06em;
+    animation: 
+      typing 1.5s steps(10, end),
+      caret 0.001s ease forwards,
+      blink-caret 0.75s step-end infinite 1.5s;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 110% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  }
