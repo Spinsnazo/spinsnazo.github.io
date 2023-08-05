@@ -45,35 +45,63 @@ html, body {
     align-items: center;
     flex-direction: column;
     position: absolute;
+    font-family: 'Source Code Pro', monospace;
     
 }
 
-.logo {
-    height: 55px;
-    margin-right: 20px;
-    margin-left: 20px;
+@media only screen and (max-width: 900px) { 
+
+    .logo {
+        height: 11vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+    .type-container h1 {
+        font-size: 8vw;
+        color: white;
+        overflow: hidden; 
+        border-right: .1em solid rgb(255, 255, 255); 
+        white-space: nowrap; 
+        margin: 0 0 15px 0;
+        letter-spacing: 0.06em;
+        animation: 
+        typing 1.5s steps(10, end),
+        blink-caret 0.75s step-end infinite 1.5s;
+    }
+    
 }
 
-.type-container h1 {
-    font-size: 40px;
-    color: white;
-    font-family: monospace;
-    overflow: hidden; 
-    border-right: .1em solid rgb(255, 255, 255); 
-    white-space: nowrap; 
-    margin: 0 0 15px 0;
-    letter-spacing: 0.06em;
-    animation: 
-      typing 1.5s steps(10, end),
-      blink-caret 0.75s step-end infinite 1.5s;
-  }
-  
-  @keyframes typing {
+@media only screen and (orientation: landscape), (min-width: 900px) {
+
+    .logo {
+        height: 10vh;
+        margin-right: 4vh;
+        margin-left: 4vh;
+    }
+    
+    .type-container h1 {
+        font-size: 8vh;
+        color: white;
+        font-family: monospace;
+        overflow: hidden; 
+        border-right: .1em solid rgb(255, 255, 255); 
+        white-space: nowrap; 
+        margin: 0 0 15px 0;
+        letter-spacing: 0.06em;
+        animation: 
+        typing 1.5s steps(10, end),
+        blink-caret 0.75s step-end infinite 1.5s;
+        
+    }
+}
+
+@keyframes typing {
     from { width: 0 }
     to { width: 110% }
-  }
-  
-  @keyframes blink-caret {
+}
+
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 255, 255); }
-  }
+}
