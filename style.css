@@ -52,13 +52,13 @@ html, body {
 @media only screen and (max-width: 900px) { 
 
     .logo {
-        height: 11vw;
+        height: 12vw;
         margin-right: 5vw;
         margin-left: 5vw;
     }
 
     .type-container h1 {
-        font-size: 8vw;
+        font-size: 10vw;
         color: white;
         overflow: hidden; 
         border-right: .1em solid rgb(255, 255, 255); 
@@ -75,13 +75,13 @@ html, body {
 @media only screen and (orientation: landscape), (min-width: 900px) {
 
     .logo {
-        height: 10vh;
-        margin-right: 4vh;
-        margin-left: 4vh;
+        height: 55px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     
     .type-container h1 {
-        font-size: 8vh;
+        font-size: 50px;
         color: white;
         font-family: monospace;
         overflow: hidden; 
