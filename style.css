@@ -19,7 +19,7 @@ html, body {
     background-image: url('assets/bgr.jpg');
     background-position: center;
     background-size: cover;
-    animation: bg 20s ease infinite;
+    animation: bg 17s ease infinite;
 }
 
 @keyframes bg {
@@ -49,6 +49,18 @@ html, body {
     
 }
 
+.type-container h1 {  
+    color: white;
+    overflow: hidden; 
+    border-right: .1em solid rgb(255, 255, 255); 
+    white-space: nowrap; 
+    margin: 0 0 15px 0;
+    letter-spacing: 0.06em;
+    animation: 
+    typing 1.5s steps(10, end),
+    blink-caret 0.75s step-end infinite 1.5s;
+}
+
 @media only screen and (max-width: 900px) { 
 
     .logo {
@@ -59,15 +71,6 @@ html, body {
 
     .type-container h1 {
         font-size: 10vw;
-        color: white;
-        overflow: hidden; 
-        border-right: .1em solid rgb(255, 255, 255); 
-        white-space: nowrap; 
-        margin: 0 0 15px 0;
-        letter-spacing: 0.06em;
-        animation: 
-        typing 1.5s steps(10, end),
-        blink-caret 0.75s step-end infinite 1.5s;
     }
     
 }
@@ -81,18 +84,7 @@ html, body {
     }
     
     .type-container h1 {
-        font-size: 50px;
-        color: white;
-        font-family: monospace;
-        overflow: hidden; 
-        border-right: .1em solid rgb(255, 255, 255); 
-        white-space: nowrap; 
-        margin: 0 0 15px 0;
-        letter-spacing: 0.06em;
-        animation: 
-        typing 1.5s steps(10, end),
-        blink-caret 0.75s step-end infinite 1.5s;
-        
+        font-size: 50px;   
     }
 }
 
