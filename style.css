@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -26,9 +27,11 @@ html, body {
     0% {
         scale: 1.0;
     }
+
     50% {
         scale: 1.2;
     }
+
     100% {
         scale: 1.0;
     }
@@ -46,22 +49,24 @@ html, body {
     flex-direction: column;
     position: absolute;
     font-family: 'Source Code Pro', monospace;
-    
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.type-container h1 {  
+.type-container h1 {
     color: white;
-    overflow: hidden; 
-    border-right: .1em solid rgb(255, 255, 255); 
-    white-space: nowrap; 
+    overflow: hidden;
+    border-right: .1em solid rgb(255, 255, 255);
+    white-space: nowrap;
     margin: 0 0 15px 0;
     letter-spacing: 0.06em;
-    animation: 
-    typing 1.5s steps(10, end),
-    blink-caret 0.75s step-end infinite 1.5s;
+    animation:
+        typing 1.5s steps(10, end),
+        blink-caret 0.75s step-end infinite 1.5s;
 }
 
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 900px) {
 
     .logo {
         height: 12vw;
@@ -72,28 +77,41 @@ html, body {
     .type-container h1 {
         font-size: 10vw;
     }
-    
+
 }
 
-@media only screen and (orientation: landscape), (min-width: 900px) {
+@media only screen and (orientation: landscape),
+(min-width: 900px) {
 
     .logo {
         height: 55px;
         margin-right: 20px;
         margin-left: 20px;
     }
-    
+
     .type-container h1 {
-        font-size: 50px;   
+        font-size: 50px;
     }
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 110% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 110%
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255); }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(255, 255, 255);
+    }
 }
